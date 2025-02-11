@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>高二三班值日表修改</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/new/logo/resources/logo.png</normaloff>:/new/logo/resources/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 237, 237);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 252, 237);
+background-color: rgb(255, 143, 143);
+font: 10pt &quot;仿宋&quot;;
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>单周</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="font">
+         <font>
+          <family>仿宋</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 252, 237);
+background-color: rgb(255, 143, 143);
+font: 10pt &quot;仿宋&quot;;
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>双周</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="font">
+           <font>
+            <family>仿宋</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;仿宋&quot;;
+color: rgb(255, 251, 238);
+background-color: rgb(255, 170, 170);
+border-radius:10px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="gridStyle">
+           <enum>Qt::SolidLine</enum>
+          </property>
+          <property name="rowCount">
+           <number>8</number>
+          </property>
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>28</number>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>100</number>
+          </attribute>
+          <attribute name="horizontalHeaderHighlightSections">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>70</number>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <item row="0" column="0">
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item row="0" column="1">
+           <property name="text">
+            <string>星期一</string>
+           </property>
+          </item>
+          <item row="0" column="2">
+           <property name="text">
+            <string>星期二</string>
+           </property>
+          </item>
+          <item row="0" column="3">
+           <property name="text">
+            <string>星期三</string>
+           </property>
+          </item>
+          <item row="0" column="4">
+           <property name="text">
+            <string>星期四</string>
+           </property>
+          </item>
+          <item row="0" column="5">
+           <property name="text">
+            <string>星期五</string>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string>扫地甲</string>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string>扫地乙</string>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string>排桌三关</string>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string>黑板</string>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string>拖地</string>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string>铁男甲</string>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string>铁男乙</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_2">
+          <property name="font">
+           <font>
+            <family>仿宋</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;仿宋&quot;;
+color: rgb(255, 251, 238);
+background-color: rgb(255, 170, 170);
+border-radius:10px;</string>
+          </property>
+          <property name="rowCount">
+           <number>8</number>
+          </property>
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>100</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>70</number>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <item row="0" column="0">
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item row="0" column="1">
+           <property name="text">
+            <string>星期一</string>
+           </property>
+          </item>
+          <item row="0" column="2">
+           <property name="text">
+            <string>星期二</string>
+           </property>
+          </item>
+          <item row="0" column="3">
+           <property name="text">
+            <string>星期三</string>
+           </property>
+          </item>
+          <item row="0" column="4">
+           <property name="text">
+            <string>星期四</string>
+           </property>
+          </item>
+          <item row="0" column="5">
+           <property name="text">
+            <string>星期五</string>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string>扫地甲</string>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string>扫地乙</string>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string>排桌三关</string>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string>黑板</string>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string>拖地</string>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string>铁男甲</string>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string>铁男乙</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>5</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(255, 192, 192);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>仿宋</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 242);
+background-color: rgb(255, 166, 166);
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
